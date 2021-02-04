@@ -16,7 +16,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
     private static final String TAG = SecondActivity.class.getSimpleName();
-    public static final String TAG_EXTRA = "com.example.android.twoactivities.EXTRA_REPLY";
+    public static final String EXTRA_REPLY = "com.example.android.twoactivities.EXTRA_REPLY";
     private EditText mReplyEditText;
 
     @Override
@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity {
         String replyMessage = mReplyEditText.getText().toString();
         Intent intentReply = new Intent(this, MainActivity.class);
 
-        intentReply.putExtra(TAG_EXTRA, replyMessage);
+        intentReply.putExtra(EXTRA_REPLY, replyMessage);
         setResult(RESULT_OK, intentReply);
         finish();
     }
