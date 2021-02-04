@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 mReplyHeadTextView.setVisibility(View.VISIBLE);
                 mReplyTextView.setText(reply);
                 mReplyTextView.setVisibility(View.VISIBLE);
+                mMessageEditText.setText("");
             }
         }
     }
